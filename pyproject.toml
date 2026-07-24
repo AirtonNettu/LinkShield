@@ -3,3 +3,6 @@ name = "linkshield"
 version = "0.1.0"
 description = "Sistema de análise de links do projeto LinkShield"
 requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.139.2",
+]
