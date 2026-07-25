@@ -1,9 +1,5 @@
 from fastapi import FastAPI
+from app.api.v1.routes.health import router
 
 app = FastAPI()
-
-@app.get("/")
-def health_check():
-    return {
-        "message": "LinkShield API running"
-    }
+app.include_router(router)
